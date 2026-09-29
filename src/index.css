@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { background: #FAF7F2; margin: 0; -webkit-tap-highlight-color: transparent; }
+body { font-family: Inter, 'Noto Sans Tamil', system-ui, sans-serif; font-weight: 500; font-size: 16px; line-height: 1.65; color: #2B2A28; }
+.card { @apply bg-white border border-line rounded-[20px] shadow-sm; }
+.tap { @apply transition-transform duration-150 active:scale-[.98]; }
+.btn { @apply w-full py-4 rounded-2xl bg-sun text-white font-semibold text-base transition-transform duration-150 active:scale-[.98] disabled:bg-line disabled:text-mute; }
+.no-sb::-webkit-scrollbar { display: none; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
